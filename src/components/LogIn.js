@@ -24,7 +24,7 @@ class LogIn extends Component {
       .then((response) => {
         const data = response.data;
 
-        window.localStorage.setItem('token', data.token);
+        // window.localStorage.setItem('token', data.token);
         window.localStorage.setItem('user_id', data.user.id);
 
         browserHistory.push(`/gear/${data.user.id}`);

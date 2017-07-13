@@ -23,9 +23,9 @@ class EditUserForm extends Component {
   componentDidMount() {
     axios
     .get(` ${this.props.theUserId}`, {
-      headers: {
-        'Authorization': window.localStorage.getItem('token')
-      }
+      // headers: {
+      //   'Authorization': window.localStorage.getItem('token')
+      // }
     })
     .then((response) => {
       const userData = response.data;
@@ -42,9 +42,9 @@ class EditUserForm extends Component {
     .put(` ${this.props.theUserId}`, {
       user: this.state
     }, {
-      headers: {
-        'Authorization': window.localStorage.getItem('token')
-      }
+      // headers: {
+      //   'Authorization': window.localStorage.getItem('token')
+      // }
     })
     .then(() => {
       browserHistory.push(`/gear/${this.props.theUserId}`);

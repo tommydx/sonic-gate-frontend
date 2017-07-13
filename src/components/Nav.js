@@ -13,16 +13,16 @@ class Nav extends Comoonent {
 
   handleLogout(event) {
     event.preventDefault();
-    window.localStorage.removeItem('token');
+    // window.localStorage.removeItem('token');
     browserHistory.push('/');
   }
 
   componentDidMount() {
     axios
       .get(` ${this.props.userId}`, {
-        headers: {
-          'Authorization': window.localStorage.getItem('token')
-        }
+        // headers: {
+        //   'Authorization': window.localStorage.getItem('token')
+        // }
       })
       .then((response) => {
         const userData = response.data;

@@ -17,9 +17,9 @@ class EditUser extends Component {
   componentDidMount() {
     axios
     .get(` ${this.props.params.user_id}`, {
-      headers: {
-        'Authorization': window.localStorage.getItem('token')
-      }
+      // headers: {
+      //   'Authorization': window.localStorage.getItem('token')
+      // }
     })
     .then((response) => {
       const userData = response.data;
