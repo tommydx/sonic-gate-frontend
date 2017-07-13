@@ -9,7 +9,7 @@ import ReactDom from 'react-dom';
 import { Route, Router, browserHistory } from 'react-router';
 
 // Application assets like CSS will go here with import path
-import './assets/css/normalize.css';
+// import './assets/css/normalize.css';
 import './assets/css/style.css';
 
 // Import components here.
@@ -18,10 +18,10 @@ import PortalPage from './components/PortalPage';
  // ** These components are NOT created yet.
 import SignUp from './components/SignUp';
 import LogIn from './components/LogIn';
-import DashboardUser from './components/DashboardUser';
-import DashboardGear from './components/DashboardGear';
-import NewUser from './components/NewUser';
-import NewGear from './components/NewGear';
+// import DashboardUser from './components/DashboardUser';
+// import DashboardGear from './components/DashboardGear';
+// import NewUser from './components/NewUser';
+// import NewGear from './components/NewGear';
 import EditUser from './components/EditUser';
 import EditGear from './components/EditGear';
 
