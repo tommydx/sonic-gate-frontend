@@ -73,10 +73,10 @@ class SignUp extends Component {
 
                 <div >
                   <div className="formLabel">
-                      Username
+                    Username
                   </div>
                   <span>
-                    <input onChange={this.handleChange} name="username" type="email" required/>
+                    <input onChange={this.handleChange} name="username" type="text" required/>
                   </span>
                 </div>
 
@@ -94,7 +94,7 @@ class SignUp extends Component {
                     Email
                   </div>
                   <span>
-                    <input onChange={this.handleChange} name="email" type="text" />
+                    <input onChange={this.handleChange} name="email" type="email" required />
                   </span>
                 </div>
 
@@ -132,7 +132,7 @@ class SignUp extends Component {
           </div>
           </div>
         </div>
-        <AppfooterOut />
+        <Footer />
       </div>
     );
   }

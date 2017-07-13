@@ -28,3 +28,5 @@ class PortalPage extends Component {
   }
 
 }
+
+export default PortalPage;
