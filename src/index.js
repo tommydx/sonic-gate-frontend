@@ -38,10 +38,10 @@ ReactDom.render(
     <Route path='/' component={PortalPage} />
     <Route path='/signup' component={SignUp} />
     <Route path='/login' component={LogIn} />
-    // <Route path='/gear/:user_id' component={DashGearSort} onEnter={restrict} />
-    // <Route path='/user/:user_id/edit' component={EditUser} onEnter={restrict} />
-    // <Route path='/user/:user_id/gear/:id/edit' component={EditGear} onEnter={restrict} />
-    // <Route path='/user/:user_id/gear/new' component={NewGear} onEnter={restrict} />
+    <Route path='/gear/:user_id' component={DashGearSort} onEnter={restrict} />
+    <Route path='/user/:user_id/edit' component={EditUser} onEnter={restrict} />
+    <Route path='/user/:user_id/gear/:id/edit' component={EditGear} onEnter={restrict} />
+    <Route path='/user/:user_id/gear/new' component={NewGear} onEnter={restrict} />
 
   </Router>
 , document.getElementById('app'));
