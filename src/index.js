@@ -3,7 +3,7 @@
 import React from 'react';
 
 // Require the package to render the virtual Dom to real DOM.
-import ReactDom from 'react-dom';
+import { render } from 'react-dom';
 
 // Configure the router.
 import { Route, Router, browserHistory } from 'react-router';
@@ -22,8 +22,8 @@ import LogIn from './components/LogIn';
 // import DashboardGear from './components/DashboardGear';
 // import NewUser from './components/NewUser';
 // import NewGear from './components/NewGear';
-import EditUser from './components/EditUser';
-import EditGear from './components/EditGear';
+// import EditUser from './components/EditUser';
+// import EditGear from './components/EditGear';
 
 // Restrict routes to logged in users only
 // const restrict = () => {
@@ -38,10 +38,10 @@ ReactDom.render(
     <Route path='/' component={PortalPage} />
     <Route path='/signup' component={SignUp} />
     <Route path='/login' component={LogIn} />
-    <Route path='/gear/:user_id' component={DashGearSort} onEnter={restrict} />
-    <Route path='/user/:user_id/edit' component={EditUser} onEnter={restrict} />
-    <Route path='/user/:user_id/gear/:id/edit' component={EditGear} onEnter={restrict} />
-    <Route path='/user/:user_id/gear/new' component={NewGear} onEnter={restrict} />
+    // <Route path='/gear/:user_id' component={DashGearSort} onEnter={restrict} />
+    // <Route path='/user/:user_id/edit' component={EditUser} onEnter={restrict} />
+    // <Route path='/user/:user_id/gear/:id/edit' component={EditGear} onEnter={restrict} />
+    // <Route path='/user/:user_id/gear/new' component={NewGear} onEnter={restrict} />
 
   </Router>
 , document.getElementById('app'));
